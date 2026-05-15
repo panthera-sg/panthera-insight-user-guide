@@ -1,18 +1,26 @@
 site_name: Panthera Insight
-site_description: User guide and legal documents for the Panthera Insight mobile app.
+site_description: User guide for the Panthera Insight mobile app.
 site_author: Panthera International Asia Capital Pte. Ltd.
 copyright: >
   &copy; 2026 Panthera International Asia Capital Pte. Ltd.
 
-# Repo + edit links are intentionally omitted — this site is read-only.
+# Repo + edit links are intentionally omitted from per-page chrome.
+# `repo_url` below is repurposed to surface the external legal site
+# as a top-right link in the header.
+edit_uri: ""
+repo_url: https://panthera-sg.github.io/panthera-insight-legal/
+repo_name: Legal & privacy
 
 theme:
   name: material
   language: en
   logo: assets/panthera-wordmark-gold.png
+  favicon: assets/favicon.png
   font:
     text: Inter
     code: JetBrains Mono
+  icon:
+    repo: material/scale-balance
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -24,6 +32,7 @@ theme:
     - search.highlight
     - content.code.copy
     - content.tabs.link
+    - toc.integrate          # moves TOC into the left nav, right side becomes pure content
     - toc.follow
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -31,8 +40,14 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+    # Dark scheme inherits Material's `slate` base so all built-in
+    # components (cards, tables, admonitions, search) flip to dark
+    # automatically. Our overrides in extra.css then re-skin slate
+    # to the Panthera deep-purple palette.
     - media: "(prefers-color-scheme: dark)"
-      scheme: panthera-dark
+      scheme: slate
+      primary: black
+      accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -59,23 +74,16 @@ markdown_extensions:
   - pymdownx.emoji
 
 nav:
-  - Home: index.md
-  - User Guide:
-      - user-guide/index.md
-      - Getting started: user-guide/getting-started.md
-      - Signing in: user-guide/signing-in.md
-      - Viewing your reports: user-guide/viewing-reports.md
-      - Security & privacy: user-guide/security-and-privacy.md
-      - Managing your account: user-guide/account-management.md
-      - Troubleshooting: user-guide/troubleshooting.md
-  - Legal:
-      - legal/index.md
-      - Privacy Notice: legal/privacy.md
-      - Terms of Service: legal/terms.md
-      - Delete your account: legal/delete-account.md
+  - Overview: index.md
+  - Getting started: user-guide/getting-started.md
+  - Signing in: user-guide/signing-in.md
+  - Viewing your reports: user-guide/viewing-reports.md
+  - Security & privacy: user-guide/security-and-privacy.md
+  - Managing your account: user-guide/account-management.md
+  - Troubleshooting: user-guide/troubleshooting.md
 
 extra:
   social:
     - icon: fontawesome/solid/envelope
       link: mailto:pantherainsight@gmail.com
-      name: Contact the DPO
+      name: pantherainsight@gmail.com

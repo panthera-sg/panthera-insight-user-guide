@@ -50,12 +50,10 @@ panthera-insight-site/
 ├── docs/
 │   ├── index.md            # Landing page
 │   ├── user-guide/         # End-client documentation
-│   ├── legal/              # Privacy, Terms, Delete-account
 │   ├── stylesheets/
 │   │   └── extra.css       # Panthera palette + light/dark schemes
 │   └── assets/
 │       ├── panthera-wordmark-gold.png
-│       ├── panthera-wordmark-scarlet.png
 │       └── user-guide/     # Screenshots / gifs for the user guide
 └── .github/workflows/deploy.yml   # GitHub Pages deploy
 ```

@@ -1,6 +1,6 @@
 # Security & privacy
 
-This page summarises the security and privacy controls built into the app. For the full legal text, see the [Privacy Notice](../legal/privacy.md).
+This page summarises the security and privacy controls built into the app. For the full legal text, see the [Privacy Notice](https://panthera-sg.github.io/panthera-insight-legal/privacy.html).
 
 ## What the app protects
 
@@ -22,7 +22,7 @@ In plain English, the app collects:
 
 We do **not** collect: advertising identifiers, your location, your contacts, photos, microphone or camera data. The app contains no third-party advertising or analytics SDKs.
 
-The [Privacy Notice](../legal/privacy.md) describes this in full.
+The [Privacy Notice](https://panthera-sg.github.io/panthera-insight-legal/privacy.html) describes this in full.
 
 ## Where your data goes
 
@@ -33,7 +33,7 @@ The app talks to a small number of services on Panthera's behalf:
 | Supabase | Authentication, database, encrypted file storage | London (eu-west-2) |
 | Sentry | Crash reports (PII-scrubbed) | EU (Frankfurt) |
 
-The list of sub-processors is also disclosed in section 5 of the [Privacy Notice](../legal/privacy.md).
+The list of sub-processors is also disclosed in section 5 of the [Privacy Notice](https://panthera-sg.github.io/panthera-insight-legal/privacy.html).
 
 ## Your rights
 
@@ -41,7 +41,7 @@ You may at any time:
 
 - Ask what personal data Panthera holds about you.
 - Ask Panthera to correct inaccurate data.
-- Delete your account — see [Managing your account](account-management.md) for the in-app path or the [Delete your account](../legal/delete-account.md) web page.
+- Delete your account — see [Managing your account](account-management.md) for the in-app path or the [Delete your account](https://panthera-sg.github.io/panthera-insight-legal/delete-account.html) web page.
 - Lodge a complaint with your local supervisory authority. The Privacy Notice lists the relevant regulators for Singapore, the UK and Canada.
 
 Requests of any of the above should be emailed to [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).

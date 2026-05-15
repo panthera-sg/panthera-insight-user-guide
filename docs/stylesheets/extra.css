@@ -1,74 +1,627 @@
 /* Panthera palette — matches lib/core/theme/app_theme.dart */
 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
 :root {
   --panthera-deep-purple: #2F1328;
   --panthera-mid-purple:  #5E3456;
   --panthera-gold:        #CD9C7F;
+  --panthera-gold-soft:   #E4C6B0;
+  --panthera-cream:       #F3EEE8;
   --panthera-aqua:        #36B6C3;
+
+  /* Three-face system, used through the rest of this stylesheet:
+     - --font-display : serif voice for page/section titles + the
+       INSIGHT submark, matches the legal site's Didot feel.
+     - --font-body    : Inter for body copy, lists, tables, links.
+     - --font-label   : tracked uppercase sans for header chrome,
+       footer notes, eyebrow ticks. */
+  --font-display: "Cormorant Garamond", Didot, "Bodoni 72", Georgia, serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-label:   "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* ---- Light scheme ---- */
+body,
+.md-typeset,
+.md-nav,
+.md-search__input {
+  font-family: var(--font-body);
+}
+
+/* ---- Light scheme ----
+   Background warmed to a soft parchment so the page no longer reads
+   as pure white-glare against the deep-purple chrome. */
 [data-md-color-scheme="panthera-light"] {
   --md-primary-fg-color:           #1A1A1A;
   --md-primary-fg-color--light:    #2F1328;
   --md-primary-fg-color--dark:     #2F1328;
-  --md-primary-bg-color:           #FFFFFF;
-  --md-primary-bg-color--light:    #F5F5F3;
+  --md-primary-bg-color:           #F5EFE6;
+  --md-primary-bg-color--light:    #ECE4D6;
 
   --md-accent-fg-color:            #5E3456;
-  --md-accent-fg-color--transparent: rgba(94, 52, 86, 0.10);
-  --md-accent-bg-color:            #FFFFFF;
-  --md-accent-bg-color--light:     #F5F5F3;
+  --md-accent-fg-color--transparent: rgba(94, 52, 86, 0.08);
+  --md-accent-bg-color:            #F5EFE6;
+  --md-accent-bg-color--light:     #ECE4D6;
 
-  --md-default-bg-color:           #F5F5F3;
-  --md-default-fg-color:           #1A1A1A;
-  --md-default-fg-color--light:    #6B6B6B;
-  --md-default-fg-color--lighter:  #BFBFBF;
-  --md-default-fg-color--lightest: #E0E0E0;
+  --md-default-bg-color:           #F0E9DC;
+  --md-default-fg-color:           #2A1F1A;
+  --md-default-fg-color--light:    #6B5A4A;
+  --md-default-fg-color--lighter:  #B5A899;
+  --md-default-fg-color--lightest: #D8CCB8;
 
   --md-typeset-a-color:            #5E3456;
-  --md-code-bg-color:              #EFEFEC;
-  --md-code-fg-color:              #1A1A1A;
+  --md-code-bg-color:              #E6DDC9;
+  --md-code-fg-color:              #2A1F1A;
 
   --md-footer-bg-color:            #1A1A1A;
   --md-footer-bg-color--dark:      #2F1328;
 }
 
-/* ---- Dark scheme ---- */
-[data-md-color-scheme="panthera-dark"] {
-  --md-primary-fg-color:           #2F3339;
-  --md-primary-fg-color--light:    #363B41;
-  --md-primary-fg-color--dark:     #22262B;
-  --md-primary-bg-color:           #E1E2E5;
-  --md-primary-bg-color--light:    #A4A8AE;
+/* ---- Dark scheme (built on Material's `slate` base) ----
+   Overriding slate (rather than declaring a fresh scheme) means every
+   built-in component — cards, admonitions, tables, search drawer,
+   code blocks — already flips to dark and only needs colour tints,
+   so we never end up with default-black text on the deep-purple
+   surface. */
+[data-md-color-scheme="slate"] {
+  --md-hue:                        290;
+
+  --md-primary-fg-color:           #2F1328;
+  --md-primary-fg-color--light:    #4A2440;
+  --md-primary-fg-color--dark:     #1A0E18;
+  --md-primary-bg-color:           #F3EEE8;
+  --md-primary-bg-color--light:    #E4C6B0;
 
   --md-accent-fg-color:            #CD9C7F;
-  --md-accent-fg-color--transparent: rgba(205, 156, 127, 0.12);
-  --md-accent-bg-color:            #22262B;
-  --md-accent-bg-color--light:     #2F3339;
+  --md-accent-fg-color--transparent: rgba(205, 156, 127, 0.14);
+  --md-accent-bg-color:            #1A0E18;
+  --md-accent-bg-color--light:     #2F1328;
 
-  --md-default-bg-color:           #22262B;
-  --md-default-fg-color:           #E1E2E5;
-  --md-default-fg-color--light:    #A4A8AE;
-  --md-default-fg-color--lighter:  #6B6F75;
-  --md-default-fg-color--lightest: #3E434A;
+  --md-default-bg-color:           #1A0E18;
+  --md-default-bg-color--light:    rgba(243, 238, 232, 0.05);
+  --md-default-bg-color--lighter:  rgba(243, 238, 232, 0.025);
+  --md-default-bg-color--lightest: rgba(243, 238, 232, 0.0125);
+  --md-default-fg-color:           #F3EEE8;
+  --md-default-fg-color--light:    #C7BBB1;
+  --md-default-fg-color--lighter:  #8E8278;
+  --md-default-fg-color--lightest: #3D2435;
 
-  --md-typeset-a-color:            #CD9C7F;
-  --md-code-bg-color:              #1A1D21;
-  --md-code-fg-color:              #E1E2E5;
+  --md-typeset-a-color:            #E4C6B0;
+  --md-code-bg-color:              #261621;
+  --md-code-fg-color:              #F3EEE8;
 
-  --md-footer-bg-color:            #1A1D21;
-  --md-footer-bg-color--dark:      #14171A;
+  --md-footer-bg-color:            #1A0E18;
+  --md-footer-bg-color--dark:      #120A11;
 }
 
-/* ---- Typography polish ---- */
+/* Slate's built-in card/admonition surfaces use --md-default-bg-color
+   tints; tighten contrast against the deep purple bg. */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset details,
+[data-md-color-scheme="slate"] .md-typeset .admonition {
+  background-color: #261621;
+  border-color: #3D2435;
+  color: var(--panthera-cream);
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  background: #261621;
+  color: var(--panthera-cream);
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #2F1328;
+  color: var(--panthera-gold-soft);
+}
+
+/* ---- Header brand: stacked wordmark + INSIGHT submark ----
+   The site_name text "Panthera Insight" that Material normally renders
+   beside the logo is hidden, and the logo button is converted into a
+   vertical stack that drops "INSIGHT" below the PNG, matching the
+   legal site's header pattern. */
+.md-header__title {
+  display: none !important;
+}
+
+.md-header {
+  height: auto;
+}
+.md-header__inner {
+  align-items: center;
+  min-height: 56px;
+}
+.md-header__button.md-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 12px;
+  margin: 0;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 28px;
+  width: auto;
+  margin: 0;
+}
+.md-header__button.md-logo::after {
+  content: "INSIGHT";
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.62rem;
+  letter-spacing: 0.45em;
+  text-indent: 0.45em; /* offset trailing letter-spacing for true centering */
+  color: var(--panthera-gold);
+  margin-top: 3px;
+  line-height: 1;
+}
+
+/* Header chrome (search input, theme toggle tooltip, legal label,
+   tabs) uses the tracked label face. */
+.md-header,
+.md-tabs,
+.md-source__repository,
+.md-search__input {
+  font-family: var(--font-label);
+}
+
+/* ---- Header right cluster: search → theme toggle → legal ---------
+   `.md-header__title` is hidden, so without an explicit spacer the
+   search/option/source elements bunch up after the logo. Force the
+   search field to take a `margin-left: auto`, which pushes itself
+   and every flex item after it to the far right edge. The order
+   property then locks the visual sequence as: search, theme toggle,
+   legal shortcut. */
+.md-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.md-header__title {
+  display: none !important;
+}
+.md-search {
+  order: 1;
+  margin-left: auto !important; /* pins everything after to the right edge */
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0;
+}
+.md-search__form {
+  width: 7.5rem;
+  height: 1.6rem;
+  min-width: 0;
+  background: rgba(243, 238, 232, 0.08);
+  border-radius: 4px;
+}
+.md-search__input {
+  width: 100%;
+  height: 1.6rem;
+  padding-left: 1.6rem;
+  font-size: 0.7rem;
+}
+.md-search__icon[for="__search"] {
+  top: 0.3rem;
+  left: 0.4rem;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.md-header__option {
+  order: 2;
+  margin: 0 0.05rem !important;
+  padding: 0;
+  flex: 0 0 auto;
+}
+.md-header__option .md-header__button {
+  padding: 0.3rem;
+  margin: 0;
+}
+.md-header__source {
+  order: 3;
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto;
+  margin: 0 0.4rem 0 0.05rem;
+  padding: 0;
+}
+.md-source {
+  padding: 0 0.25rem;
+  gap: 0.4rem;
+}
+
+/* Legal shortcut — Material absolute-positions the icon and label
+   over each other; collapse to a clean inline-flex row with a
+   comfortable gap so the icon and "Legal" label never overlap. */
+.md-source {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.7rem;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0 0.5rem;
+  height: auto;
+  line-height: 1;
+}
+.md-source__icon {
+  position: static !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 auto;
+}
+.md-source__icon svg {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+}
+.md-source__repository {
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-weight: 500;
+  white-space: nowrap;
+  max-width: none;
+  overflow: visible;
+  line-height: 1;
+}
+.md-source__facts {
+  display: none; /* hide the "stars / forks" placeholders that show n/a */
+}
+.md-source:hover {
+  opacity: 1;
+  color: var(--panthera-gold);
+}
+
+/* ---- Top-tab navigation: clearer active state ---------------------
+   No bottom border on the strip itself. Each tab gets a short gold
+   underline that fades in on hover; the active (currently-navigated)
+   tab keeps a solid underline regardless of pointer state. */
+.md-tabs {
+  border-bottom: 0 !important;
+  font-size: 0.7rem;
+}
+.md-tabs__link {
+  position: relative;
+  opacity: 0.85;
+  margin-top: 0;
+  padding: 0.55rem 0 0.5rem;
+  font-size: 0.7rem;
+  transition: opacity 120ms ease, color 120ms ease;
+}
+.md-tabs__link::after {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  bottom: 2px;
+  height: 2px;
+  background: var(--panthera-gold);
+  opacity: 0;
+  transition: opacity 160ms ease;
+}
+.md-tabs__link:hover::after {
+  opacity: 0.6;
+}
+.md-tabs__item--active > .md-tabs__link::after,
+.md-tabs__link--active::after {
+  opacity: 1;
+}
+.md-tabs__item--active > .md-tabs__link,
+.md-tabs__link--active {
+  opacity: 1;
+  font-weight: 600;
+  color: var(--panthera-cream, #F3EEE8);
+}
+
+/* ---- Strip stray Material blue + low-contrast purple-on-purple ---
+   In dark mode the mid-purple sits one shade off the deep-purple bg
+   and reads as a smudge. Anything that previously used mid-purple
+   for hover/active state on dark mode is re-routed to gold; light
+   mode keeps the mid-purple since contrast is fine on parchment. */
+[data-md-color-scheme="panthera-light"] {
+  --md-accent-fg-color:            var(--panthera-mid-purple);
+}
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color:            var(--panthera-gold);
+}
+.md-typeset a:focus,
+.md-typeset a:active,
+.md-nav__link:focus,
+.md-search-result__link:hover,
+.md-search-result__link:focus {
+  color: var(--panthera-gold) !important;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--panthera-gold-soft);
+}
+[data-md-color-scheme="panthera-light"] .md-typeset a {
+  color: var(--panthera-mid-purple);
+}
+[data-md-color-scheme="panthera-light"] .md-nav__link--active {
+  color: var(--panthera-mid-purple);
+}
+.md-typeset code {
+  color: var(--panthera-mid-purple);
+  background: var(--md-code-bg-color);
+}
+[data-md-color-scheme="slate"] .md-typeset code {
+  color: var(--panthera-gold-soft);
+}
+/* Search highlight pill — Material defaults to its accent (was
+   mid-purple); use gold so it pops on the deep-purple dropdown. */
+[data-md-color-scheme="slate"] .md-search-result mark {
+  background: rgba(205, 156, 127, 0.30);
+  color: var(--panthera-cream);
+}
+
+/* ---- TOC moved into the left nav (toc.integrate) ----------------
+   The right-side secondary nav is removed entirely. The TOC entries
+   now sit nested under the active page in the left sidebar; tighten
+   their type and add a thin gold tick on the active anchor. */
+.md-sidebar--secondary {
+  display: none !important;
+}
+.md-content {
+  max-width: none;
+}
+.md-nav__item .md-nav__link[href*="#"] {
+  font-size: 0.66rem;
+  padding: 0.18rem 0;
+  opacity: 0.85;
+  border-left: 2px solid transparent;
+  padding-left: 0.5rem;
+  transition: border-color 120ms ease, color 120ms ease, opacity 120ms ease;
+}
+.md-nav__item .md-nav__link[href*="#"]:hover {
+  opacity: 1;
+}
+.md-nav__link--active[href*="#"] {
+  border-left-color: var(--panthera-gold);
+  color: var(--panthera-gold) !important;
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* ---- Footer ------------------------------------------------------
+   Two-part layout:
+     1. .md-footer__inner — prev/next page nav. Stays in normal flow
+        at the end of the article, slim height.
+     2. .md-footer-meta    — copyright + email row. Pinned to the
+        viewport bottom like the header.
+*/
+.md-footer {
+  position: static;          /* the parent itself does not pin */
+  background: transparent;
+}
+.md-footer__inner {
+  /* prev/next page strip — sits naturally after the page content
+     and inherits text color from the active palette so the labels
+     are not white-on-parchment in light mode. */
+  position: static;
+  padding: 0.35rem 0.7rem;
+  min-height: 0;
+  background: transparent;
+  color: var(--md-default-fg-color);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin-top: 1.6em;
+}
+.md-footer__inner .md-footer__link,
+.md-footer__inner .md-footer__title,
+.md-footer__inner .md-footer__direction,
+.md-footer__inner .md-ellipsis {
+  color: var(--md-default-fg-color);
+}
+.md-footer__inner .md-footer__direction {
+  color: var(--md-default-fg-color--light);
+}
+.md-footer__inner .md-footer__link:hover,
+.md-footer__inner .md-footer__link:focus {
+  color: var(--md-accent-fg-color);
+  opacity: 1;
+}
+.md-footer__link {
+  padding: 0.2rem 0.4rem;
+  /* Allow each side (prev / next) to take up to half the row, with
+     normal wrapping if the page title is long, instead of clipping. */
+  flex: 0 1 50%;
+  min-width: 0;
+}
+.md-footer__title {
+  font-size: 0.66rem;
+  padding: 0 0.4rem;
+  line-height: 1.25;
+  max-width: none;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: clip;
+}
+.md-footer__title .md-ellipsis,
+.md-footer__title.md-ellipsis {
+  /* Footer prev/next titles only — let them wrap rather than clip. */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  display: block;
+}
+.md-footer__direction {
+  font-size: 0.55rem;
+  letter-spacing: 0.06em;
+  opacity: 0.65;
+  font-family: var(--font-label, "Inter", sans-serif);
+  text-transform: uppercase;
+}
+.md-footer__button {
+  padding: 0.2rem;
+  margin: 0.1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Pinned copyright bar */
+.md-footer-meta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.6rem;
+  font-family: var(--font-label);
+  letter-spacing: 0.04em;
+  background: var(--md-footer-bg-color--dark);
+  border-top: 1px solid rgba(205, 156, 127, 0.18);
+}
+.md-footer-meta__inner {
+  padding: 0;
+  min-height: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.md-footer-copyright {
+  padding: 0;
+  font-size: 0.6rem;
+  line-height: 1.3;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.md-copyright {
+  margin: 0;
+  font-size: 0.6rem;
+  line-height: 1.3;
+}
+.md-social {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.md-social__link {
+  height: auto;
+  width: auto;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+.md-social__link svg {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+/* envelope icon + email text on a single row */
+.md-social__link[href^="mailto:"] {
+  width: auto;
+  padding: 0 0.3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+.md-social__link[href^="mailto:"]::after {
+  content: "pantherainsight@gmail.com";
+  font-family: var(--font-display);
+  font-size: 0.52rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  margin: 0;
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+/* The pinned copyright bar sits over the document edge; offset the
+   whole container by its height so the prev/next strip (which lives
+   inside .md-footer) ends comfortably above it. */
+.md-container {
+  padding-bottom: 2.6rem;
+}
+.md-footer__inner {
+  margin-bottom: 0.4rem;
+}
+
+/* ---- Typography polish ----
+   Smaller, denser hierarchy with a clear divider between top-level
+   sections (H2) so pages read as scannable structure. */
+.md-typeset {
+  font-size: 0.72rem;
+  line-height: 1.65;
+}
+/* H1 — clean serif title in a saturated theme color so the page
+   title carries weight without needing a decorative rule. */
 .md-typeset h1 {
+  font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.005em;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin: 0.2em 0 0.5em;
+  color: var(--panthera-deep-purple);
 }
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--panthera-gold);
+}
+.md-typeset h1 + p {
+  /* lede paragraph following H1 — slightly larger, muted */
+  font-size: 0.76rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.4em;
+}
+/* H2 = section boundary. The top rule is the visible divider between
+   sections; the gold left-tick anchors the heading in the column. */
 .md-typeset h2 {
+  font-family: var(--font-display);
   font-weight: 600;
-  margin-top: 2.2em;
+  font-size: 1.2rem;
+  letter-spacing: 0.005em;
+  margin: 2.4em 0 0.55em;
+  line-height: 1.3;
+  color: var(--md-default-fg-color);
+}
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: var(--panthera-gold-soft);
+  border-top-color: rgba(243, 238, 232, 0.08);
+}
+/* H3 — the tracked-uppercase subtitle ("MY SIGN-IN CODE NEVER…").
+   Sits one rung below the saturated H1: same hue family, slightly
+   lighter. Mid-purple in light mode, gold-soft in dark mode — both
+   clearly distinct from white/cream body text. */
+.md-typeset h3 {
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 0.72rem;
+  margin: 1.6em 0 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--panthera-mid-purple);
+}
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: var(--panthera-gold-soft);
+}
+.md-typeset hr {
+  border: 0;
+  height: 1px;
+  background: var(--md-default-fg-color--lightest);
+  margin: 2em 0;
+}
+.md-typeset p,
+.md-typeset li {
+  color: var(--md-default-fg-color);
+}
+[data-md-color-scheme="slate"] .md-typeset p,
+[data-md-color-scheme="slate"] .md-typeset li {
+  color: #E6DFD6;
+}
+.md-typeset strong {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .md-typeset strong {
+  color: var(--panthera-cream);
 }
 
 /* Subtle gold underline accents on key links */
@@ -105,6 +658,20 @@
   font-size: 1.05rem;
   color: var(--md-default-fg-color--light);
   margin-bottom: 1.5em;
+}
+
+/* Footer social row — show the email address as plain text after the
+   envelope icon so users can read/copy it without hovering. */
+.md-social__link[href^="mailto:"] {
+  width: auto;
+  padding: 0 0.4rem;
+}
+.md-social__link[href^="mailto:"]::after {
+  content: "pantherainsight@gmail.com";
+  margin-left: 0.4rem;
+  font-size: 0.72rem;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
 }
 
 /* Callout (legal disclaimers) */
