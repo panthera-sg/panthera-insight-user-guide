@@ -1,6 +1,6 @@
 # Viewing your reports
 
-Your monthly portfolio reports are prepared by Panthera's portfolio operations team and made available to you through the app. This page explains how to find them.
+Your monthly portfolio reports are prepared by Panthera Singaopre's team and made available to you through the app. Note that only the latest monthly report will be available, showing the latest state of the account, past reports are not available. This page explains how to find them.
 
 ## The home screen
 
@@ -10,30 +10,19 @@ After signing in, the app opens on the **home screen**, which shows your latest 
     📷 Replace with a screenshot of the home screen with the most recent report visible.
     Suggested file: `assets/user-guide/home-screen.png`
 
-The header shows the **report period** (for example, "April 2026") and the **client name** the report is prepared for. If you have access to more than one client account, you can switch between them using the account selector at the top of the screen.
-
-## Browsing past reports
-
-To see earlier reports:
-
-1. Tap **History** (or the calendar icon, depending on your version of the app).
-2. Scroll through the timeline of past reports.
-3. Tap any entry to open it.
-
-!!! example "placeholder"
-    📷 Replace with a screenshot of the history / timeline view.
-    Suggested file: `assets/user-guide/report-history.png`
-
-Reports are stored on Panthera's servers, not on your phone, so the list will always show the complete archive available to your account regardless of which device you sign in from.
+The header shows the **client name** the report is prepared for. If you have access to more than one client account, you can switch between them using the account selector at the top of the screen.
 
 ## What's inside a report
 
 A typical report contains:
 
-- A **summary** of valuations and performance for the period.
-- **Holdings** broken down by asset class.
-- **Historical performance** charts.
-- **Notes** from your portfolio operations team where relevant.
+- An **overview** for the corresponding portfolio.
+- **Holdings** in the viewing portfolio, broken down by assets.
+- **Historical performance** chart, showing the compound returns of the portfolio since inception.
+- **Historical return** table, showing the monthly returns of the portfolio since inception.
+- **Historical dividend** table, replacing the **Historical return** data while toggled, showing the dividends paid from the portfolio since inception. 
+*Note that **Historical dividend** table is only available for dividend-paying portfolio, the table type selector automatically shown when any dividend data is available.*
+- **Summary** showing the calculated overall data and technical metrics for the respective portfolio.
 
 !!! example "placeholder"
     📷 Replace with a screenshot showing report sections.
@@ -41,11 +30,14 @@ A typical report contains:
 
 ## Saving a report
 
-You may save a copy of any report to your phone as a PDF.
+You may save a copy of the displaying report to your phone as a PDF.
 
-1. Open the report you want to save.
-2. Tap the **Download** (or share) icon.
-3. Choose where to save it (Files / Documents on iOS, Downloads on Android, or share it to another app).
+1. Tap on the **Download** icon on the right-upper corner of the report homw screen.
+2. Preview the report you want to save.
+3. Tap the **Download** (or share) icon.
+4. Choose where to save it (Files / Documents on iOS, Downloads on Android, or share it to another app).
+
+**_NOTE:_** You may toggle the checkbox(es) for each report(s), and download multiple PDFs (if any) together in one go.
 
 !!! example "placeholder"
     🎬 Replace with a short gif showing the download flow.
