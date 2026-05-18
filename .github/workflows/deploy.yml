@@ -50,4 +50,7 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
         
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
 
