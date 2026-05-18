@@ -544,6 +544,194 @@ body,
   margin-bottom: 0.4rem;
 }
 
+/* Mobile / narrow tablet: the pinned copyright bar wraps onto two
+   lines (long email + small viewport), so it's noticeably taller than
+   on desktop. The default 2.6rem container offset is no longer enough
+   and the lower half of the prev/next page-nav strip slides behind
+   the fixed bar. Stack prev/next vertically, give them full width, and
+   bump the container offset to clear the wrapped meta bar plus the
+   iOS home-indicator safe area. */
+@media screen and (max-width: 76.1875em) {
+  .md-container {
+    padding-bottom: calc(5.2rem + env(safe-area-inset-bottom, 0px));
+  }
+  .md-footer__inner {
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .md-footer__inner .md-footer__link {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .md-footer-meta {
+    padding-bottom: calc(0.25rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ---- Mobile header + drawer chrome ----
+   Desktop layout is unchanged. On mobile we want the header to read
+   left-to-right as:
+     hamburger ▸ logo ▸ search ▸ theme toggle ▸ legal icon
+   which means hiding the "Panthera Insight" text that Material renders
+   between the logo and the right-side icon cluster. The opened side
+   drawer then mirrors the header's INSIGHT submark instead of the
+   white site-name string, and drops the legal link (it's already an
+   icon in the header). */
+@media screen and (max-width: 76.1875em) {
+  /* Hide the site-name text in the top bar so the logo sits flush
+     against the right-side icon row. */
+  .md-header__title {
+    display: none;
+  }
+
+  /* Material hides .md-header__source below 60em and .md-footer__inner
+     below 76.1875em by default. We want the legal icon and the
+     prev/next page-nav strip visible on phones too — force them on.
+     On mobile, the source slot shows the icon only — the "Legal &
+     privacy" repo-name label is suppressed so the header doesn't have
+     a long text string next to the icon. */
+  .md-header__source {
+    display: block;
+    width: auto;
+    max-width: none;
+    /* Right inset so the scale-balance glyph doesn't kiss the screen
+       edge / device safe-area on phones. */
+    margin-right: 0.4rem;
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+  .md-header__source .md-source__repository,
+  .md-header__source .md-source__facts {
+    display: none;
+  }
+  .md-header__source .md-source {
+    padding: 0 0.4rem 0 0;
+    width: auto;
+  }
+  .md-header__source .md-source__icon {
+    margin: 0;
+  }
+  .md-footer__inner:not([hidden]) {
+    display: flex;
+  }
+  /* Material's mobile defaults hide the inner title block of each
+     prev/next link, leaving only the arrow icon. Force-show the
+     direction label ("Previous" / "Next") and the page-title ellipsis
+     so the link communicates what it leads to. */
+  .md-footer__inner .md-footer__title,
+  .md-footer__inner .md-footer__direction,
+  .md-footer__inner .md-ellipsis {
+    display: block;
+  }
+  .md-footer__inner .md-footer__title {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0 0.8rem;
+  }
+  .md-footer__inner .md-footer__direction {
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 0.1rem;
+  }
+  .md-footer__inner .md-ellipsis {
+    font-size: 0.72rem;
+    line-height: 1.25;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Drawer header — replace the bold white "Panthera Insight"
+     site-name with the gold-tracked INSIGHT submark used in the
+     desktop header. The logo glyph + INSIGHT submark are vertically
+     centred in the title strip via flex column centering so they
+     never crowd the top edge. */
+  .md-nav--primary > .md-nav__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5.6rem;
+    font-size: 0;            /* collapse the original site-name text node */
+    line-height: 0;
+    padding: 1rem 0.8rem;
+    background-color: var(--md-primary-fg-color);
+    color: var(--panthera-gold);
+    text-align: center;
+  }
+  .md-nav--primary > .md-nav__title .md-nav__button.md-logo {
+    display: block;
+    line-height: normal;
+    padding: 0;
+  }
+  .md-nav--primary > .md-nav__title .md-nav__button.md-logo img,
+  .md-nav--primary > .md-nav__title .md-nav__button.md-logo svg {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: auto;
+  }
+  .md-nav--primary > .md-nav__title::after {
+    content: "INSIGHT";
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.5em;
+    /* Trailing letter-spacing pushes the visual centre right; pad-left
+       by the same amount so INSIGHT sits truly centred under the logo. */
+    padding-left: 0.5em;
+    color: var(--panthera-gold);
+    line-height: 1;
+  }
+
+  /* Drawer-only: drop the legal/repo source row — that icon is now
+     reachable directly from the header bar. */
+  .md-nav--primary .md-nav__source {
+    display: none;
+  }
+
+  /* Search input — the default mobile width clips the "Search"
+     placeholder to "Sea". Stretch the input to fill the overlay
+     header so the full hint fits, and pad the icon so it doesn't
+     overlap the first letter. */
+  .md-search__form {
+    width: 100%;
+  }
+  .md-search__input {
+    width: 100%;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .md-search__input::placeholder {
+    text-overflow: clip;
+    overflow: visible;
+  }
+}
+
+/* ---- Active nav item highlight ----
+   Material's default uses the accent (deep purple) which, in the
+   slate-derived dark scheme, falls back to a blue tint. Pin the
+   active-section indicator to the Panthera palette across both
+   schemes instead. */
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link,
+.md-nav__link[aria-current="page"] {
+  color: var(--panthera-mid-purple);
+  font-weight: 600;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav__link[aria-current="page"] {
+  color: var(--panthera-gold);
+}
+
 /* ---- Typography polish ----
    Smaller, denser hierarchy with a clear divider between top-level
    sections (H2) so pages read as scannable structure. */
