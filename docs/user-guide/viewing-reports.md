@@ -1,6 +1,7 @@
 # Viewing your reports
 
-Your monthly portfolio reports are prepared by Panthera's portfolio operations team and made available to you through the app. This page explains how to find them.
+Your monthly portfolio reports are prepared by Panthera Singapore's team and made available to you through the app. Note that only the latest monthly report will be available, showing the latest state of the account, past reports are not available. This page explains how to find them.
+
 
 ## The home screen
 
@@ -52,7 +53,7 @@ You may save a copy of any report to your phone as a PDF.
     Suggested file: `assets/user-guide/save-report.gif`
 
 !!! warning "About saved PDFs"
-    A saved PDF is a copy of the report **at the moment you saved it**. If your report is later corrected by Panthera, the saved copy on your phone will not update. The version in the app is always the current authoritative copy.
+    A saved PDF is a copy of the report **at the moment you saved it**. If your report is later corrected by Panthera, the saved copies on your phone will not update. The version in the app is always the current authoritative copy.
 
 ## A note about accuracy
 

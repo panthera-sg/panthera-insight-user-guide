@@ -32,9 +32,9 @@ body,
    Background warmed to a soft parchment so the page no longer reads
    as pure white-glare against the deep-purple chrome. */
 [data-md-color-scheme="panthera-light"] {
-  --md-primary-fg-color:           #1A1A1A;
-  --md-primary-fg-color--light:    #2F1328;
-  --md-primary-fg-color--dark:     #2F1328;
+  --md-primary-fg-color:           #2F1328;
+  --md-primary-fg-color--light:    #5E3456;
+  --md-primary-fg-color--dark:     #1A0E18;
   --md-primary-bg-color:           #F5EFE6;
   --md-primary-bg-color--light:    #ECE4D6;
 
@@ -66,9 +66,9 @@ body,
 [data-md-color-scheme="slate"] {
   --md-hue:                        290;
 
-  --md-primary-fg-color:           #2F1328;
-  --md-primary-fg-color--light:    #4A2440;
-  --md-primary-fg-color--dark:     #1A0E18;
+  --md-primary-fg-color:           #1A0E18;
+  --md-primary-fg-color--light:    #2F1328;
+  --md-primary-fg-color--dark:     #120A11;
   --md-primary-bg-color:           #F3EEE8;
   --md-primary-bg-color--light:    #E4C6B0;
 
