@@ -11,8 +11,7 @@ If you have not yet received an invitation but believe you should have, please c
 The app is available on both major app stores. Search for **"Panthera Insight"** or use the direct links below.
 
 !!! example "placeholder"
-    📷 Replace with App Store / Google Play listing badge images.
-    Suggested file: `assets/user-guide/store-badges.png`
+    📷 Comming Soon!
 
 === "iPhone / iPad"
 
@@ -39,10 +38,6 @@ The first time you open the app you will be walked through three short screens b
 3. **"Stay signed in on this device?"** A quick choice between ***Keep me signed in*** (recommended for daily use) and ***Sign in each time***. See [Signing in → Keep me signed in](signing-in.md#keep-me-signed-in).
 
 After that the app lands on your report home screen.
-
-!!! example "placeholder"
-    📷 Replace with four screenshots, side-by-side: disclaimer gate, email-entry screen, code-entry screen, "Stay signed in?" prompt.
-    Suggested files: `assets/user-guide/disclaimer-gate.png`, `assets/user-guide/sign-in-email.png`, `assets/user-guide/sign-in-otp.png`, `assets/user-guide/caching-prompt.png`
 
 ## What you'll need at hand
 

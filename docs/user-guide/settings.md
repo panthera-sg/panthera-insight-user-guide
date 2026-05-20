@@ -4,9 +4,7 @@ The **Settings** screen is reached from the gear icon at the top of the report h
 
 This page lists the sections in the order they appear on screen.
 
-!!! example "placeholder"
-    📷 Replace with a screenshot of the Settings screen, scrolled to show the top sections.
-    Suggested file: `assets/user-guide/settings-top.png`
+![Settings screen](../assets/user-guide-image/settings-screen.png){ width="260" }
 
 ## Update available *(only when relevant)*
 
@@ -78,9 +76,7 @@ The **Delete account** tile lets you remove your access to the app. The flow is 
 3. The app calls Panthera's server-side deletion routine while you wait.
 4. On success, the app signs you out, clears any cached data on the device, and shows the snackbar **"Your account has been deleted."**
 
-!!! example "placeholder"
-    📷 Replace with screenshots of the delete-account confirmation dialog and the post-deletion snackbar.
-    Suggested files: `assets/user-guide/delete-account-confirm.png`, `assets/user-guide/delete-account-done.png`
+![Delete-account confirmation dialog](../assets/user-guide-image/delete-account-dialog.png){ width="220" } ![Account deleted confirmation](../assets/user-guide-image/delete-account-successful.png){ width="220" }
 
 !!! danger "Deletion is irreversible"
     Once your account is deleted, your email is removed from the access allow-list. You will not be able to sign in again unless Panthera invites you afresh as a new account holder.

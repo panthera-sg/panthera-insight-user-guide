@@ -18,9 +18,7 @@ Open it from the **Download** icon at the top of the report home.
 - A **Download selected (N of M)** button pinned at the top.
 - A **Filter** icon (top-right of the screen) for narrowing the visible profiles.
 
-!!! example "placeholder"
-    📷 Replace with a screenshot of the downloads screen showing profile cards with file lists.
-    Suggested file: `assets/user-guide/downloads-screen.png`
+![Download Screen](../assets/user-guide-image/report-screen-single-report.png){width="260" }
 
 ## Previewing a single PDF
 
@@ -28,10 +26,6 @@ Tap any PDF row on the PDF name (not its checkbox) to open it in the in-app prev
 
 - Scrolling and zooming through pages.
 - A **Download** icon (top-right of the preview) to save the file to your device or share it.
-
-!!! example "placeholder"
-    📷 Replace with a screenshot of the in-app PDF preview.
-    Suggested file: `assets/user-guide/pdf-preview.png`
 
 ??? tip "If the preview fails to load"
     The screen shows **"Failed to load PDF: …"**. Check your internet connection and tap back, then try again. If the same file keeps failing, use the **Download** action from the list to save it locally and open it in your device's PDF app.
@@ -48,9 +42,7 @@ Files are saved to:
 - **iPhone / iPad:** the app's **Documents** directory, accessible via the iOS *Files* app under "On My iPhone / iPad → Panthera Insight". iCloud backup is intentionally off for these files.
 - **Android:** the device **Downloads** folder.
 
-!!! example "placeholder"
-    🎬 Replace with a short gif showing the multi-select download flow.
-    Suggested file: `assets/user-guide/downloads-flow.gif`
+![Multi-report screen](../assets/user-guide-image/report-screen-multi-report.png){width="260" }
 
 ??? tip "If some files fail"
     The snackbar reports **"Downloaded *N* of *M* (*K* failed)"** when one or more files could not be saved. Per-file errors also appear as a snackbar (**"Download failed: …"**). The successful files are saved; you can re-select only the failed ones and retry.

@@ -12,9 +12,7 @@ After signing in, the app opens on the **report home**. It is built around a sin
 - **Portfolio selector.** A horizontal chip strip listing the portfolios available under the current client.
 - **Chart card.** The main visualisation for the selected portfolio and chart type, with a navbar across the bottom for switching views.
 
-!!! example "placeholder"
-    📷 Replace with a screenshot of the report home with the headline figures and a chart visible.
-    Suggested file: `assets/user-guide/home-screen.png`
+![Report home with headline figures and chart](../assets/user-guide-image/home-report-screen.png){ width="260" }
 
 ## Switching between accounts (clients)
 
@@ -28,6 +26,8 @@ Each client may have several portfolios. There are two ways to move between them
 
 - Tap a chip in the **portfolio selector** strip.
 - **Swipe left or right** on the chart card. The carousel wraps around — swiping past the last portfolio takes you back to the first.
+
+![Swiping left/right between portfolios](../assets/user-guide-gif/cross-portfolio-slide.gif){ width="260" }
 
 ## Switching between chart types
 
@@ -46,9 +46,7 @@ To move between views:
 - Tap a label in the **navbar** at the bottom of the chart card, or
 - **Swipe up or down** on the chart. A small hint label (**To Holdings**, **To Performance**, …) appears mid-swipe so you know where you are going.
 
-!!! example "placeholder"
-    📷 Replace with a screenshot showing the navbar and a chart, plus the "To Performance" swipe hint.
-    Suggested file: `assets/user-guide/chart-navbar.png`
+![Chart card with the bottom navbar](../assets/user-guide-gif/holdings.gif){ width="260" }
 
 ## Refreshing
 
@@ -73,13 +71,21 @@ A typical report covers:
 
 - A **Brief Summary** in the header which updates according to the selected portfolio.
 - **Holdings** broken down by asset class.
+
+![Holginds pie](../assets/user-guide-gif/holdings.gif){ width="260" }
+
 - **Historical performance** charts.
+
+![Performance chart](../assets/user-guide-gif/performance.gif){ width="260" }
+
 - **Returns** and, where applicable, **dividend** breakdowns.
+
+![Returns and dividend tables](../assets/user-guide-gif/return-and-dividend.gif){ width="260" }
+
 - A **summary** of valuations and performance for the period.
 
-!!! example "placeholder"
-    📷 Replace with a screenshot showing report sections.
-    Suggested file: `assets/user-guide/report-sections.png`
+![Summary list](../assets/user-guide-image/summary.png){ width="260" }
+
 
 ## Edge cases and tips
 

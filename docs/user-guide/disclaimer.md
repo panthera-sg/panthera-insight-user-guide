@@ -20,9 +20,7 @@ The full text is shown in-app and is also linked from the [legal & privacy site]
 
 The app then proceeds to your reports (or, on first sign-in, to the **"Stay signed in on this device?"** prompt described in [Signing in](signing-in.md#keep-me-signed-in)).
 
-!!! example "placeholder"
-    📷 Replace with a screenshot of the disclaimer screen with the "You have reviewed the disclaimer." confirmation visible.
-    Suggested file: `assets/user-guide/disclaimer-gate.png`
+![Disclaimer screen with the review confirmation](../assets/user-guide-gif/disclaimer.gif){ width="260" }
 
 ??? tip "If the Accept button is greyed out"
     You have not yet scrolled to the end. The screen shows **"Read to the end before accepting."** with a small down-arrow. Keep scrolling — the button activates automatically once the bottom comes into view.
