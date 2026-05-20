@@ -316,6 +316,20 @@ body,
   color: var(--panthera-cream, #F3EEE8);
 }
 
+/* ---- Tab-strip fit: 10 top-level sections overflow the bar and the
+   last tab ("Troubleshooting") gets clipped at the right edge. Tighten
+   the per-item horizontal padding so the full set fits, let the list
+   wrap as a graceful fallback on narrower viewports instead of
+   clipping, and add a small right inset so the final tab never kisses
+   the screen edge. */
+.md-tabs__list {
+  flex-wrap: wrap;
+  padding-right: 0.6rem;
+}
+.md-tabs__item {
+  padding: 0 0.5rem;
+}
+
 /* ---- Strip stray Material blue + low-contrast purple-on-purple ---
    In dark mode the mid-purple sits one shade off the deep-purple bg
    and reads as a smudge. Anything that previously used mid-purple
@@ -356,6 +370,20 @@ body,
 [data-md-color-scheme="slate"] .md-search-result mark {
   background: rgba(205, 156, 127, 0.30);
   color: var(--panthera-cream);
+}
+
+/* Text-selection highlight — replace the browser default blue with
+   the Panthera palette. Scheme-split so the gold tint stays readable
+   on both parchment (light) and deep-purple (dark) backgrounds.
+   ::selection backgrounds are forced toward opaque by browsers, so
+   these use solid palette colors rather than rgba tints. */
+[data-md-color-scheme="panthera-light"] ::selection {
+  background: var(--panthera-gold-soft);
+  color: var(--panthera-deep-purple);
+}
+[data-md-color-scheme="slate"] ::selection {
+  background: var(--panthera-gold);
+  color: var(--panthera-deep-purple);
 }
 
 /* ---- TOC moved into the left nav (toc.integrate) ----------------

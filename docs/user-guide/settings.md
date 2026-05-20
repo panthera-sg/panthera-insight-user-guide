@@ -17,11 +17,11 @@ If a newer version of Panthera Insight is in the App Store / Google Play, a gold
 Shows the email you are signed in as, the client account(s) you have access to, and two sign-out actions.
 
 - **Logged in as** — the email Panthera has on file for you. If this looks wrong, contact your relationship manager; the address is not editable from inside the app.
-- **Accessible profiles** — up to three are shown inline. If you have four or more, tap **Show profiles** / **Hide profiles** to expand or collapse the list.
+- **Accessible profiles** — up to three are shown inline. If you have four or more, tap ***N*** **profiles** / **Hide profiles** to expand or collapse the list.
 
 ### Sign-out
 
-- **Sign out on this device** *(red text)*. Clears your session on this phone only. After confirming, you will be returned to the sign-in screen on this device; other devices keep their sessions. Use this when you simply want to step away from the app on this phone.
+- **Sign out on this device** *(red filled-background, red text)*. Clears your session on this device only. After confirming, you will be returned to the sign-in screen on this device; other devices keep their sessions. Use this when you simply want to step away from the app on this device.
 - **Sign out everywhere** *(outlined, red)*. Ends your session on **every** device where you have signed in. Use this if you suspect unauthorised access, if you have lost a device, or if you want a clean slate.
 
 Each option asks for confirmation before acting.
@@ -35,7 +35,7 @@ Three controls govern how the app looks:
 
 | Control | What it does |
 | ------- | ------------ |
-| **Theme** | Segmented switch between *Light*, *System* (default), and *Dark*. *System* follows your phone's system-wide setting. |
+| **Theme** | Segmented switch between *Light*, *System* (default), and *Dark*. *System* follows your device's system-wide setting. |
 | **Text Size** | Slider from about 70% to 200% of the default. The change is live — you see it apply as you drag. |
 | **View Density** | Segmented switch between *Compact*, *Standard*, and *Comfortable*, controlling vertical spacing. |
 | **Font Family** | Radio list of available fonts. Each option previews the sentence *"The quick brown fox jumps over the lazy dog"* in that font. |
@@ -56,7 +56,7 @@ This is the same setting offered after your first sign-in. The switch controls w
 Tap the small **i** info icon next to the title to see the same explanation as a dialog. The dialog also reminds you that **reports you have downloaded to this device are not affected** by this setting — they remain saved locally either way.
 
 ??? tip "If the switch is greyed out"
-    Your device has no PIN / biometrics set, so the app cannot offer cached sign-in. Set up a screen lock in your phone's system settings, then come back — the switch becomes available.
+    Your device has no PIN / biometrics set, so the app cannot offer cached sign-in. Set up a screen lock in your device's system settings, then come back — the switch becomes available.
 
 ## User Guide
 

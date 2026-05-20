@@ -13,7 +13,7 @@ For the email-code flow itself — code not arriving, code rejected, "Try again 
 For the lock screen that appears on app resume when **Keep me signed in** is on — biometric prompt not appearing, "Too many failed attempts" cooldown, sessions that have expired — see [Signing in → Re-opening the app](signing-in.md#re-opening-the-app-the-lock-screen).
 
 ??? tip "The device unlock prompt does not appear at all"
-    - Make sure you have a screen lock set up in your phone's **system** settings (fingerprint / face / PIN).
+    - Make sure you have a screen lock set up in your device's **system** settings (fingerprint / face / PIN).
     - In the app, check **Settings → On Exit → Keep me signed in** is **on**. If it is off, the app does not lock on resume — it signs you out completely and asks for an email code instead.
     - Force-close the app and reopen it.
 
@@ -25,7 +25,7 @@ For the lock screen that appears on app resume when **Keep me signed in** is on 
     - Check with your Panthera relationship manager that this period's report has been finalised on their side.
 
 ??? tip "I can only see one report — where is the history?"
-    The home screen shows only the **latest** report. Historical reports live in the **Downloads** screen — tap the Download icon at the top of the home. See [Downloading reports](downloads.md).
+    Panthera Insight **only provide the most current report**, which will be processed and updated by our team regularly once new records are received and validated on our end.
 
 ??? warning "The numbers in my report look wrong"
     Reports are prepared with reasonable care but may contain pricing or timing differences relative to the underlying custodian records. **In case of a discrepancy, the custodian records prevail.** Please reach out to your Panthera relationship manager so they can review and, if needed, correct the report.

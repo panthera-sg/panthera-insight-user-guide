@@ -4,7 +4,9 @@ Six steps to go from "just installed the app" to "looking at my report". Each st
 
 ## 1. Install the app
 
-Search for **Panthera Insight** in the App Store (iPhone / iPad) or Google Play (Android) and install it. Minimum versions: **iOS 14** or **Android 8.0**.
+Search for **Panthera Insight** in the App Store (iPhone / iPad) or Google Play (Android) and install it. 
+
+Minimum versions: **iOS 14** or **Android 8.0**.
 
 More detail → [Getting started](getting-started.md)
 
@@ -22,6 +24,9 @@ More detail → [Disclaimer & Acknowledgement](disclaimer.md)
 
 There is no password to remember — every sign-in uses a fresh code emailed to you.
 
+!!! warning "Important Declaration"
+    Panthera Insight and the team will **never request any pin and password** from you. You should **never disclose** any of these, **including the email verification code**, even if you're seeking assistance from our end.
+
 More detail → [Signing in](signing-in.md)
 
 ## 4. Choose how to resume
@@ -37,18 +42,20 @@ You can change this later in **Settings → On Exit → Keep me signed in**.
 
 The app opens on your **report home**. The header shows the report period and your client name. From there you can:
 
-- **Swipe up / down** on a chart to switch between **Holdings**, **Performance**, **Returns**, **Summary**, and **Dividend** views.
+- **Swipe up / down** on a chart to switch between **Holdings**, **Performance**, **Returns**, **Summary**, and **Dividend** (if applicable) views.
 - **Swipe left / right** on a chart to cycle through your portfolios.
 - **Pull down** on the header to refresh.
-- **Pinch** to zoom in on the header data or a chart (if enabled in Settings).
+- **Pinch** to zoom in on the header data or a chart (enabled on default in Settings).
 
-If you have access to more than one client account, use the **client selector** at the top.
+If you have access to more than one client account, use the **client selector** at the top left, it will be a fixed label if you only have one account.
 
 More detail → [Viewing your reports](viewing-reports.md)
 
-## 6. Download a PDF (optional)
+## 6. Download a PDF
 
-Tap the **Download** icon (top of the home screen) to open the downloads archive. Tick the reports you want, then tap **Download selected**. PDFs are saved to your phone's Documents (iOS) or Downloads (Android) folder. Tap any single PDF to preview it in-app first.
+Tap the **Download** icon (top right of the home screen) to open the downloads archive. You may tap any single PDF to preview it in-app first.
+
+Directly tap the download icon to the right of the PDF, or tick the reports you want, then tap **Download selected**. PDFs are saved to your device's Documents (iOS) or Downloads (Android) folder. 
 
 More detail → [Downloading reports](downloads.md)
 

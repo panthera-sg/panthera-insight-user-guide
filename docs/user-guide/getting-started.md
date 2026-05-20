@@ -35,8 +35,8 @@ The app is available on both major app stores. Search for **"Panthera Insight"**
 The first time you open the app you will be walked through three short screens before you reach your reports. Each is covered in detail on its own page; the summary below is so you know what to expect.
 
 1. **Disclaimer & Acknowledgement.** A scrollable legal notice. Scroll to the bottom and tap **Accept**. See [Disclaimer & Acknowledgement](disclaimer.md).
-2. **Sign in.** Enter your email, receive a 6-digit code by email, type it in. See [Signing in](signing-in.md).
-3. **"Stay signed in on this device?"** A quick choice between *Keep me signed in* (recommended for daily use) and *Sign in each time*. See [Signing in → Keep me signed in](signing-in.md#keep-me-signed-in).
+2. **Sign in.** Enter your registered email, receive a 6-digit code by email, type it in. See [Signing in](signing-in.md).
+3. **"Stay signed in on this device?"** A quick choice between ***Keep me signed in*** (recommended for daily use) and ***Sign in each time***. See [Signing in → Keep me signed in](signing-in.md#keep-me-signed-in).
 
 After that the app lands on your report home screen.
 
@@ -54,4 +54,4 @@ After that the app lands on your report home screen.
     If the inbox associated with your account is no longer reachable, please contact your relationship manager so the email on file can be updated before you try to sign in. You will not be able to receive sign-in codes otherwise.
 
 ??? tip "If your device has no PIN or biometrics set"
-    The app will still work, but the "Keep me signed in" option is not available. You will be asked for a fresh email code every time you launch the app. Setting up a screen lock in your phone's settings is the easiest fix.
+    The app will still work, but the "Keep me signed in" option is not available. You will be asked for a fresh email code every time you launch the app. Setting up a screen lock in your device's settings is the easiest fix.

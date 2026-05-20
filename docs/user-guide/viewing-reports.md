@@ -8,7 +8,7 @@ For downloading reports as PDFs (including historical ones), see [Downloading re
 
 After signing in, the app opens on the **report home**. It is built around a single, scrollable card per report period, with three layers:
 
-- **Header.** Client name and role, the **report period** (e.g. "April 2026"), and a row of headline figures — *Current Amount*, *Inception Return*, *Annual Return*, *Net Profit*, *Disbursements*.
+- **Header.** Client name, and a row of headline figures — ***Current Amount***, ***Inception Return***, ***Annual Return***, ***Net Profit***, ***Disbursements***.
 - **Portfolio selector.** A horizontal chip strip listing the portfolios available under the current client.
 - **Chart card.** The main visualisation for the selected portfolio and chart type, with a navbar across the bottom for switching views.
 
@@ -18,7 +18,7 @@ After signing in, the app opens on the **report home**. It is built around a sin
 
 ## Switching between accounts (clients)
 
-If you have access to more than one client account, a **client selector** appears at the top of the home screen. Tap it to switch — all portfolios, figures, and charts then refresh to the newly selected client.
+If you have access to more than one client account, an **account selector** appears at the top of the home screen. Tap it to switch — all portfolios, figures, and charts then refresh to the newly selected client.
 
 If you only have one client account, the selector is shown as a label and there is nothing to switch.
 
@@ -71,10 +71,11 @@ Zoom is limited to 2× and resets when you leave the screen.
 
 A typical report covers:
 
-- A **summary** of valuations and performance for the period.
+- A **Brief Summary** in the header which updates according to the selected portfolio.
 - **Holdings** broken down by asset class.
 - **Historical performance** charts.
 - **Returns** and, where applicable, **dividend** breakdowns.
+- A **summary** of valuations and performance for the period.
 
 !!! example "placeholder"
     📷 Replace with a screenshot showing report sections.
@@ -82,18 +83,15 @@ A typical report covers:
 
 ## Edge cases and tips
 
-??? tip "If the report does not load — \"Failed to load profile\" / \"Failed to load reports\""
+??? tip "If the report does not load — "Failed to load profile" / "Failed to load reports""
     The app shows a friendly error message and a **Retry** button. Check that you have a working internet connection, then tap **Retry**. If the error persists, sign out and back in. If it still persists, please email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
 
-??? tip "If you see \"No reports available yet\""
-    Your account is set up correctly, but no report has been finalised yet for the current period. Please check with your Panthera relationship manager that the period's report is ready on their side.
+??? tip "If you see "No reports available yet" / "No *** data""
+    Your account is set up correctly, but no report or specific chart data has been finalised yet for the current period. Please check with your Panthera relationship manager that the period's report is ready on their side.
 
-??? tip "If a gold banner appears at the top — \"Update available\""
+??? tip "If a silver banner appears at the top — "Update available""
     A newer version of the app is in the App Store / Google Play. Tap the banner to be taken to the store. The current version continues to work; updating is recommended for security and bug fixes. The same banner is shown in **Settings** until you update.
 
 ??? warning "If the numbers look wrong"
     Reports are prepared with reasonable care but may contain pricing or timing differences relative to the underlying custodian records. **In case of a discrepancy, the custodian records prevail.** Please reach out to your Panthera relationship manager so they can review and, if needed, correct the report. Do not act on the in-app figures alone.
 
-## Historical reports
-
-The report home always shows the **latest available** report. To browse and download earlier reports, use the **Download** icon at the top of the home screen — see [Downloading reports](downloads.md).
