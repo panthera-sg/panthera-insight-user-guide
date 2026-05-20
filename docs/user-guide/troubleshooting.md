@@ -1,70 +1,57 @@
 # Troubleshooting
 
-If something is not working as expected, please check the items below before contacting support — most issues have a quick fix.
+Most edge cases in the app — what each error message means, what to do about it — are explained on the page for the screen where they appear, in collapsible **"If…"** tips. This page is a short index to where those tips live, plus a few things that do not belong on any single screen.
+
+If you cannot find your answer here, please email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
 
 ## Sign-in problems
 
-### My sign-in code never arrives
+For the email-code flow itself — code not arriving, code rejected, "Try again in M:SS" cooldowns, the daily "Too many attempts" limit — see the collapsed tips on [Signing in → Signing in with an email code](signing-in.md#signing-in-with-an-email-code).
 
-1. Check your **spam / junk** folder. Sign-in codes are sent from `noreply@…` — some mail providers route automated mail there by default.
-2. Make sure you typed your email correctly. The code is sent to whatever address you entered, exactly as typed.
-3. Wait a minute, then tap **Send code** again. Codes are sent with a short cooldown between attempts.
-4. If nothing arrives within ~5 minutes, check with your IT or email provider that mail from the `pantheraisg.io` (or your relationship manager's domain) is not being blocked.
+## Lock screen issues
 
-### My code is rejected
+For the lock screen that appears on app resume when **Keep me signed in** is on — biometric prompt not appearing, "Too many failed attempts" cooldown, sessions that have expired — see [Signing in → Re-opening the app](signing-in.md#re-opening-the-app-the-lock-screen).
 
-Codes expire after a short window and can only be used once. If yours is rejected, request a new one.
-
-### "Too many attempts" message
-
-For security, the app rate-limits sign-in attempts. If you see this message:
-
-- Wait **15 minutes**, then try again with a fresh code.
-- If it persists, please email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com) so we can check from our side.
-
-### I forgot my password
-
-You can sign in by email code at any time, even if you have a password set. After signing in, you can change or remove the password from **Settings → Security**.
-
-## Biometric unlock issues
-
-### The biometric prompt doesn't appear
-
-- Make sure biometric unlock is **enabled in your device settings** (Face ID / Touch ID / fingerprint).
-- Make sure it's **turned on inside the app** (Settings → Security → Biometric unlock).
-- Try fully closing the app and reopening it.
-
-### Biometric unlock keeps asking for my password
-
-This usually happens when your sign-in session has expired (typically after a long period of inactivity, or after a security-sensitive change). Re-enter your password — the app will resume normal biometric behaviour afterwards.
+??? tip "The device unlock prompt does not appear at all"
+    - Make sure you have a screen lock set up in your phone's **system** settings (fingerprint / face / PIN).
+    - In the app, check **Settings → On Exit → Keep me signed in** is **on**. If it is off, the app does not lock on resume — it signs you out completely and asks for an email code instead.
+    - Force-close the app and reopen it.
 
 ## Report problems
 
-### My latest report is not showing
+??? tip "My latest report is not showing"
+    - Pull-to-refresh the home screen (drag the header down).
+    - Make sure you have a working internet connection.
+    - Check with your Panthera relationship manager that this period's report has been finalised on their side.
 
-- Pull-to-refresh the home screen.
-- Make sure you have a working internet connection.
-- Check with your Panthera relationship manager that this period's report has been finalised on their side.
+??? tip "I can only see one report — where is the history?"
+    The home screen shows only the **latest** report. Historical reports live in the **Downloads** screen — tap the Download icon at the top of the home. See [Downloading reports](downloads.md).
 
-### The numbers in my report look wrong
+??? warning "The numbers in my report look wrong"
+    Reports are prepared with reasonable care but may contain pricing or timing differences relative to the underlying custodian records. **In case of a discrepancy, the custodian records prevail.** Please reach out to your Panthera relationship manager so they can review and, if needed, correct the report.
 
-Reports are prepared with reasonable care but may contain pricing or timing differences relative to the underlying custodian records. **In case of a discrepancy, the custodian records prevail.** Please reach out to your Panthera relationship manager so they can review and, if needed, correct the report.
+## Downloads problems
+
+For per-file download failures, profile filter issues, or in-app PDF preview errors, see the collapsed tips on the [Downloading reports](downloads.md) page.
+
+## Settings / account problems
+
+For sign-out failures, the greyed-out **Keep me signed in** switch, or account-deletion errors, see the collapsed tips on the [Settings](settings.md) page.
 
 ## General
 
-### The app feels slow / unresponsive
+??? tip "The app feels slow or unresponsive"
+    - Make sure the app is up to date in the App Store / Google Play (a gold "Update available" banner appears in the app when one is waiting).
+    - Force-close and reopen the app.
+    - Sign out and back in.
 
-- Make sure the app is up to date in the App Store / Google Play.
-- Try force-closing and reopening it.
-- Try signing out and back in.
+??? tip "Something else is wrong"
+    Please send the details to [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com). Helpful information to include:
 
-### Something else is wrong
+    - What you were doing when the issue happened.
+    - Any error message or unexpected behaviour you saw.
+    - Your device model and OS version.
+    - The **app version** from the bottom of the Settings screen.
+    - A screenshot if you can take one.
 
-If your issue is not covered above, please send the details to [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com). Helpful information to include:
-
-- What you were doing when the issue happened.
-- Any error message or unexpected behaviour you saw.
-- Your device model and OS version.
-- A screenshot if you can take one.
-
-We aim to respond within a few business days.
+    We aim to respond within a few business days.

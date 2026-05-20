@@ -30,18 +30,28 @@ The app is available on both major app stores. Search for **"Panthera Insight"**
 
     Minimum Android version: **Android 8.0 (API 26) or later**.
 
-## First launch
+## First launch — what you'll see, in order
 
-When you open the app for the first time you will see a brief welcome screen, followed by the sign-in screen. The next page in this guide — [Signing in](signing-in.md) — walks you through the sign-in flow step by step.
+The first time you open the app you will be walked through three short screens before you reach your reports. Each is covered in detail on its own page; the summary below is so you know what to expect.
+
+1. **Disclaimer & Acknowledgement.** A scrollable legal notice. Scroll to the bottom and tap **Accept**. See [Disclaimer & Acknowledgement](disclaimer.md).
+2. **Sign in.** Enter your email, receive a 6-digit code by email, type it in. See [Signing in](signing-in.md).
+3. **"Stay signed in on this device?"** A quick choice between *Keep me signed in* (recommended for daily use) and *Sign in each time*. See [Signing in → Keep me signed in](signing-in.md#keep-me-signed-in).
+
+After that the app lands on your report home screen.
 
 !!! example "placeholder"
-    📷 Replace with two screenshots: welcome screen and sign-in screen.
-    Suggested files: `assets/user-guide/welcome.png`, `assets/user-guide/sign-in.png`
+    📷 Replace with four screenshots, side-by-side: disclaimer gate, email-entry screen, code-entry screen, "Stay signed in?" prompt.
+    Suggested files: `assets/user-guide/disclaimer-gate.png`, `assets/user-guide/sign-in-email.png`, `assets/user-guide/sign-in-otp.png`, `assets/user-guide/caching-prompt.png`
 
 ## What you'll need at hand
 
 - The **email address** Panthera has on file for you (your invitation will reference it).
 - Access to the **inbox** for that email address, to receive the one-time sign-in code.
-- A device with **biometric unlock enabled** (Face ID, Touch ID, or Android fingerprint). The app will use it as a quick way to re-open the app once you have signed in.
+- A device with a **screen lock** set up — fingerprint, face unlock, or at minimum a PIN / passcode. The app uses your device's own unlock method to re-open the app between sessions; there is **no separate password** to remember inside the app.
 
-If you cannot access the email inbox associated with your account, please contact your relationship manager to arrange an update before you try to sign in.
+??? tip "If you cannot access your account email"
+    If the inbox associated with your account is no longer reachable, please contact your relationship manager so the email on file can be updated before you try to sign in. You will not be able to receive sign-in codes otherwise.
+
+??? tip "If your device has no PIN or biometrics set"
+    The app will still work, but the "Keep me signed in" option is not available. You will be asked for a fresh email code every time you launch the app. Setting up a screen lock in your phone's settings is the easiest fix.

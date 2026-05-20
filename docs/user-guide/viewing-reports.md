@@ -1,60 +1,99 @@
 # Viewing your reports
 
-Your monthly portfolio reports are prepared by Panthera Singapore's team and made available to you through the app. Note that only the latest monthly report will be available, showing the latest state of the account, past reports are not available. This page explains how to find them.
+Your monthly portfolio reports are prepared by Panthera Singapore's team and made available to you through the app. This page covers what you see on the report home, how to move between portfolios and chart types, and how to refresh.
 
+For downloading reports as PDFs (including historical ones), see [Downloading reports](downloads.md).
 
-## The home screen
+## The report home
 
-After signing in, the app opens on the **home screen**, which shows your latest available report.
+After signing in, the app opens on the **report home**. It is built around a single, scrollable card per report period, with three layers:
+
+- **Header.** Client name and role, the **report period** (e.g. "April 2026"), and a row of headline figures — *Current Amount*, *Inception Return*, *Annual Return*, *Net Profit*, *Disbursements*.
+- **Portfolio selector.** A horizontal chip strip listing the portfolios available under the current client.
+- **Chart card.** The main visualisation for the selected portfolio and chart type, with a navbar across the bottom for switching views.
 
 !!! example "placeholder"
-    📷 Replace with a screenshot of the home screen with the most recent report visible.
+    📷 Replace with a screenshot of the report home with the headline figures and a chart visible.
     Suggested file: `assets/user-guide/home-screen.png`
 
-The header shows the **report period** (for example, "April 2026") and the **client name** the report is prepared for. If you have access to more than one client account, you can switch between them using the account selector at the top of the screen.
+## Switching between accounts (clients)
 
-## Browsing past reports
+If you have access to more than one client account, a **client selector** appears at the top of the home screen. Tap it to switch — all portfolios, figures, and charts then refresh to the newly selected client.
 
-To see earlier reports:
+If you only have one client account, the selector is shown as a label and there is nothing to switch.
 
-1. Tap **History** (or the calendar icon, depending on your version of the app).
-2. Scroll through the timeline of past reports.
-3. Tap any entry to open it.
+## Switching between portfolios
+
+Each client may have several portfolios. There are two ways to move between them:
+
+- Tap a chip in the **portfolio selector** strip.
+- **Swipe left or right** on the chart card. The carousel wraps around — swiping past the last portfolio takes you back to the first.
+
+## Switching between chart types
+
+The chart card supports five views:
+
+| View | Shows |
+| ---- | ----- |
+| **Holdings** | Allocation pie of the portfolio. |
+| **Performance** | Line chart of valuation over time. |
+| **Returns** | Returns table. If a dividend table exists for the period, it is shown alongside. |
+| **Dividend** | Dividend table (where applicable). |
+| **Summary** | Key metrics table for the period. |
+
+To move between views:
+
+- Tap a label in the **navbar** at the bottom of the chart card, or
+- **Swipe up or down** on the chart. A small hint label (**To Holdings**, **To Performance**, …) appears mid-swipe so you know where you are going.
 
 !!! example "placeholder"
-    📷 Replace with a screenshot of the history / timeline view.
-    Suggested file: `assets/user-guide/report-history.png`
+    📷 Replace with a screenshot showing the navbar and a chart, plus the "To Performance" swipe hint.
+    Suggested file: `assets/user-guide/chart-navbar.png`
 
-Reports are stored on Panthera's servers, not on your phone, so the list will always show the complete archive available to your account regardless of which device you sign in from.
+## Refreshing
+
+To pull the latest data from Panthera's servers:
+
+- **Pull down** on the header. A custom spinner appears as you drag. Release once the spinner is fully drawn — the report data reloads.
+
+You can also reach the report home from anywhere by closing the Settings or Downloads screen.
+
+## Zooming in
+
+If **Pinch-to-zoom report zones** is on in [Settings → Zoom Accessibility](settings.md#zoom-accessibility), you can:
+
+- **Pinch** on the **header** to magnify the headline figures, and
+- **Pinch** on the **chart card** to magnify the chart, independently.
+
+Zoom is limited to 2× and resets when you leave the screen.
 
 ## What's inside a report
 
-A typical report contains:
+A typical report covers:
 
 - A **summary** of valuations and performance for the period.
 - **Holdings** broken down by asset class.
 - **Historical performance** charts.
-- **Notes** from your portfolio operations team where relevant.
+- **Returns** and, where applicable, **dividend** breakdowns.
 
 !!! example "placeholder"
     📷 Replace with a screenshot showing report sections.
     Suggested file: `assets/user-guide/report-sections.png`
 
-## Saving a report
+## Edge cases and tips
 
-You may save a copy of any report to your phone as a PDF.
+??? tip "If the report does not load — \"Failed to load profile\" / \"Failed to load reports\""
+    The app shows a friendly error message and a **Retry** button. Check that you have a working internet connection, then tap **Retry**. If the error persists, sign out and back in. If it still persists, please email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
 
-1. Open the report you want to save.
-2. Tap the **Download** (or share) icon.
-3. Choose where to save it (Files / Documents on iOS, Downloads on Android, or share it to another app).
+??? tip "If you see \"No reports available yet\""
+    Your account is set up correctly, but no report has been finalised yet for the current period. Please check with your Panthera relationship manager that the period's report is ready on their side.
 
-!!! example "placeholder"
-    🎬 Replace with a short gif showing the download flow.
-    Suggested file: `assets/user-guide/save-report.gif`
+??? tip "If a gold banner appears at the top — \"Update available\""
+    A newer version of the app is in the App Store / Google Play. Tap the banner to be taken to the store. The current version continues to work; updating is recommended for security and bug fixes. The same banner is shown in **Settings** until you update.
 
-!!! warning "About saved PDFs"
-    A saved PDF is a copy of the report **at the moment you saved it**. If your report is later corrected by Panthera, the saved copies on your phone will not update. The version in the app is always the current authoritative copy.
+??? warning "If the numbers look wrong"
+    Reports are prepared with reasonable care but may contain pricing or timing differences relative to the underlying custodian records. **In case of a discrepancy, the custodian records prevail.** Please reach out to your Panthera relationship manager so they can review and, if needed, correct the report. Do not act on the in-app figures alone.
 
-## A note about accuracy
+## Historical reports
 
-Reports are prepared with reasonable care but may contain pricing or timing differences relative to the underlying custodian records. In case of a discrepancy, the custodian records prevail. If you spot something that does not look right, please contact your Panthera relationship manager.
+The report home always shows the **latest available** report. To browse and download earlier reports, use the **Download** icon at the top of the home screen — see [Downloading reports](downloads.md).

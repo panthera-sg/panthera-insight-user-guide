@@ -75,11 +75,14 @@ markdown_extensions:
 
 nav:
   - Overview: index.md
+  - Quick start: user-guide/quick-start.md
   - Getting started: user-guide/getting-started.md
   - Signing in: user-guide/signing-in.md
+  - Disclaimer & Acknowledgement: user-guide/disclaimer.md
   - Viewing your reports: user-guide/viewing-reports.md
+  - Downloading reports: user-guide/downloads.md
+  - Settings: user-guide/settings.md
   - Security & privacy: user-guide/security-and-privacy.md
-  - Managing your account: user-guide/account-management.md
   - Troubleshooting: user-guide/troubleshooting.md
 
 extra:
