@@ -45,6 +45,6 @@ Panthera Insight is provided to existing clients of Panthera International Asia 
 
 For anything specific to your portfolio or the contents of your reports, please contact your Panthera relationship manager directly.
 
-For app-related questions (sign-in problems, an error message, suspicious activity on your account), email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+For app-related questions (sign-in problems, an error message, suspicious activity on your account), email [it@pantherafo.com](mailto:it@pantherafo.com).
 
 For privacy notices, terms of service and account-deletion procedures, visit the [legal & privacy site](https://panthera-sg.github.io/panthera-insight-legal/).

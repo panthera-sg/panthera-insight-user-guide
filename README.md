@@ -98,6 +98,6 @@ grep -rn "placeholder" docs/user-guide/
 ## Notes
 
 - Operating entity: **Panthera International Asia Capital Pte. Ltd.**, regulated under a Singapore MAS licence.
-- DPO mailbox: `pantherainsight@gmail.com`.
+- DPO mailbox: `it@pantherafo.com`.
 - Sub-processors disclosed in the Privacy Notice: Supabase and Sentry.
 - The legal content is currently engineering-drafted. Have counsel review before the app goes live in any App Store / Play Store.

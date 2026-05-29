@@ -2,7 +2,7 @@
 
 Most edge cases in the app — what each error message means, what to do about it — are explained on the page for the screen where they appear, in collapsible **"If…"** tips. This page is a short index to where those tips live, plus a few things that do not belong on any single screen.
 
-If you cannot find your answer here, please email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+If you cannot find your answer here, please email [it@pantherafo.com](mailto:it@pantherafo.com).
 
 ## Sign-in problems
 
@@ -46,7 +46,7 @@ For sign-out failures, the greyed-out **Keep me signed in** switch, or account-d
     - Sign out and back in.
 
 ??? tip "Something else is wrong"
-    Please send the details to [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com). Helpful information to include:
+    Please send the details to [it@pantherafo.com](mailto:it@pantherafo.com). Helpful information to include:
 
     - What you were doing when the issue happened.
     - Any error message or unexpected behaviour you saw.

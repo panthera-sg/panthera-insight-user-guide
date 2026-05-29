@@ -90,7 +90,7 @@ A typical report covers:
 ## Edge cases and tips
 
 ??? tip "If the report does not load — "Failed to load profile" / "Failed to load reports""
-    The app shows a friendly error message and a **Retry** button. Check that you have a working internet connection, then tap **Retry**. If the error persists, sign out and back in. If it still persists, please email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+    The app shows a friendly error message and a **Retry** button. Check that you have a working internet connection, then tap **Retry**. If the error persists, sign out and back in. If it still persists, please email [it@pantherafo.com](mailto:it@pantherafo.com).
 
 ??? tip "If you see "No reports available yet" / "No *** data""
     Your account is set up correctly, but no report or specific chart data has been finalised yet for the current period. Please check with your Panthera relationship manager that the period's report is ready on their side.

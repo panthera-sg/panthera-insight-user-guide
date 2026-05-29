@@ -74,4 +74,4 @@ See [Settings → Account](settings.md#account) for the exact buttons.
 
 ## If you still cannot sign in
 
-Have a look at [Troubleshooting → Sign-in problems](troubleshooting.md#sign-in-problems). If nothing there helps, email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+Have a look at [Troubleshooting → Sign-in problems](troubleshooting.md#sign-in-problems). If nothing there helps, email [it@pantherafo.com](mailto:it@pantherafo.com).

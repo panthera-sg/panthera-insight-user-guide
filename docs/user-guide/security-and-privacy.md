@@ -46,7 +46,7 @@ You may at any time:
 - Delete your account — see [Settings → Danger Zone](settings.md#danger-zone-delete-account) for the in-app path or the [Delete your account](https://panthera-sg.github.io/panthera-insight-legal/delete-account.html) web page.
 - Lodge a complaint with your local supervisory authority. The Privacy Notice lists the relevant regulators for Singapore, the UK and Canada.
 
-Requests of any of the above should be emailed to [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+Requests of any of the above should be emailed to [it@pantherafo.com](mailto:it@pantherafo.com).
 
 ## If you suspect unauthorised access
 
@@ -54,6 +54,6 @@ If you think someone else may have accessed your account — for example, you se
 
 1. **Sign out everywhere** (Settings → Account → Sign out everywhere).
 2. Secure the **email inbox** associated with your account (change its password, enable 2FA).
-3. Email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com) so we can review the account activity from our side.
+3. Email [it@pantherafo.com](mailto:it@pantherafo.com) so we can review the account activity from our side.
 
 Because the app uses one-time codes (no in-app password) and binds caching to your device's own PIN / biometrics, an attacker who does not have access to both your email **and** your unlocked device cannot reach your reports.

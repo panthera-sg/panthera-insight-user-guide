@@ -77,7 +77,7 @@ The filter icon turns the brand accent colour while a filter is active, with a t
 ## Edge cases
 
 ??? tip "If the list fails to load — "Failed to load reports.""
-    Check your internet connection and tap **Retry**. If the error persists, sign out and back in. If it still persists, email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+    Check your internet connection and tap **Retry**. If the error persists, sign out and back in. If it still persists, email [it@pantherafo.com](mailto:it@pantherafo.com).
 
 ??? tip "If you see "No reports available yet.""
     No report PDFs are available to your account yet. Once your relationship manager finalises a report, it appears here automatically — pull-to-refresh the list or click the refresh button at the top-right corner to recheck.
