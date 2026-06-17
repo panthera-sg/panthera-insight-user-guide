@@ -8,6 +8,7 @@ This page summarises the security and privacy controls built into the app. For t
 - **Your report data** is fetched from Panthera's servers each time the app needs to display it; it is not stored long-term on your device beyond what is required for the current screen.
 - **Saved PDFs** (from the Downloads screen) are written to the device's Documents (iOS) / Downloads (Android) folder. They are deliberately excluded from iCloud / device cloud backup, so they do not propagate to other devices.
 - **Lock screen on resume.** If you chose **Keep me signed in**, the app locks itself with your device's PIN / biometrics whenever it is opened from cold or returned to after a couple of minutes in the background. Anyone else picking up your device cannot see your reports without your unlock method.
+- **Screenshots and the app switcher are protected.** To keep your portfolio off shared surfaces, the app hides its contents in the phone's recent-apps / app-switcher view (you see a blank or blurred card instead of your report). On **Android**, taking a screenshot or screen recording inside the app is blocked by the system — this is intentional, not a fault. If you need to share something from a report, use the **Download PDF** option instead.
 
 ![Lock screen on app resume](../assets/user-guide-image/touch-id-login.png){ width="260" }
 
@@ -46,7 +47,7 @@ You may at any time:
 - Delete your account — see [Settings → Danger Zone](settings.md#danger-zone-delete-account) for the in-app path or the [Delete your account](https://panthera-sg.github.io/panthera-insight-legal/delete-account.html) web page.
 - Lodge a complaint with your local supervisory authority. The Privacy Notice lists the relevant regulators for Singapore, the UK and Canada.
 
-Requests of any of the above should be emailed to [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com).
+Requests of any of the above should be emailed to [it@pantherafo.com](mailto:it@pantherafo.com).
 
 ## If you suspect unauthorised access
 
@@ -54,6 +55,6 @@ If you think someone else may have accessed your account — for example, you se
 
 1. **Sign out everywhere** (Settings → Account → Sign out everywhere).
 2. Secure the **email inbox** associated with your account (change its password, enable 2FA).
-3. Email [pantherainsight@gmail.com](mailto:pantherainsight@gmail.com) so we can review the account activity from our side.
+3. Email [it@pantherafo.com](mailto:it@pantherafo.com) so we can review the account activity from our side.
 
 Because the app uses one-time codes (no in-app password) and binds caching to your device's own PIN / biometrics, an attacker who does not have access to both your email **and** your unlocked device cannot reach your reports.

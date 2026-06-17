@@ -622,7 +622,7 @@ body,
   white-space: nowrap;
 }
 .md-social__link[href^="mailto:"]::after {
-  content: "pantherainsight@gmail.com";
+  content: "it@pantherafo.com";
   font-family: var(--font-display);
   font-size: 0.52rem;
   font-style: italic;
@@ -953,7 +953,7 @@ body,
   padding: 0 0.4rem;
 }
 .md-social__link[href^="mailto:"]::after {
-  content: "pantherainsight@gmail.com";
+  content: "it@pantherafo.com";
   margin-left: 0.4rem;
   font-size: 0.72rem;
   vertical-align: middle;
