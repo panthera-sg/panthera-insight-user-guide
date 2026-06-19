@@ -8,7 +8,7 @@ This page summarises the security and privacy controls built into the app. For t
 - **Your report data** is fetched from Panthera's servers each time the app needs to display it; it is not stored long-term on your device beyond what is required for the current screen.
 - **Saved PDFs** (from the Downloads screen) are written to the device's Documents (iOS) / Downloads (Android) folder. They are deliberately excluded from iCloud / device cloud backup, so they do not propagate to other devices.
 - **Lock screen on resume.** If you chose **Keep me signed in**, the app locks itself with your device's PIN / biometrics whenever it is opened from cold or returned to after a couple of minutes in the background. Anyone else picking up your device cannot see your reports without your unlock method.
-- **Screenshots and the app switcher are protected.** To keep your portfolio off shared surfaces, the app hides its contents in the phone's recent-apps / app-switcher view (you see a blank or blurred card instead of your report). On **Android**, taking a screenshot or screen recording inside the app is blocked by the system — this is intentional, not a fault. If you need to share something from a report, use the **Download PDF** option instead.
+- **The app switcher is protected.** To keep your portfolio off shared surfaces, the app hides its contents in the phone's recent-apps / app-switcher view (you see a blank or blurred card instead of your report). You can still take normal screenshots inside the app if you want to — but for sharing a report we recommend the **Download PDF** option, which gives you the official document.
 
 ![Lock screen on app resume](../assets/user-guide-image/touch-id-login.png){ width="260" }
 
