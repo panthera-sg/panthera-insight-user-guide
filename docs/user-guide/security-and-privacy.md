@@ -10,7 +10,7 @@ This page summarises the security and privacy controls built into the app. For t
 - **Lock screen on resume.** If you chose **Keep me signed in**, the app locks itself with your device's PIN / biometrics whenever it is opened from cold or returned to after a couple of minutes in the background. Anyone else picking up your device cannot see your reports without your unlock method.
 - **The app switcher is protected.** To keep your portfolio off shared surfaces, the app hides its contents in the phone's recent-apps / app-switcher view (you see a blank or blurred card instead of your report). You can still take normal screenshots inside the app if you want to — but for sharing a report we recommend the **Download PDF** option, which gives you the official document.
 
-![Lock screen on app resume](../assets/user-guide-image/touch-id-login.png){ width="260" }
+![Lock screen on app resume](../assets/user-guide-image/biometrics-login.png){ width="260" }
 
 ??? tip "If you chose "Sign in each time" instead"
     The lock screen does not apply — your session is wiped on exit, so the next launch goes straight to the email-code sign-in. You can switch behaviours any time in **Settings → On Exit → Keep me signed in**.

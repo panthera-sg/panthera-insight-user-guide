@@ -55,7 +55,7 @@ If you chose **Keep me signed in**, the app shows a **lock screen** when you:
 
 The screen shows a lock icon and **"Confirm it is you to continue. Use your device biometrics or passcode."** Tap **Unlock**, complete the device prompt, and the app opens silently to wherever you left off.
 
-![Lock screen with device PIN unlock](../assets/user-guide-image/device-pin-login.png){ width="220" } ![Lock screen with biometric unlock](../assets/user-guide-image/touch-id-login.png){ width="220" }
+![The app's lock screen](../assets/user-guide-image/biometrics-login.png){ width="220" } ![Device passcode prompt](../assets/user-guide-image/device-pin-login.png){ width="220" } ![Device Face ID prompt](../assets/user-guide-image/face-id.png){ width="220" }
 
 ??? tip "If the unlock fails"
     After multiple failed unlock attempts the lock screen shows **"Too many failed attempts. Try again in M:SS."** Wait for the countdown to finish and try again. If the device unlock simply does not prompt, see [Troubleshooting](troubleshooting.md#lock-screen-issues).
