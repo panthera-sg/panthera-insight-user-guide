@@ -42,7 +42,7 @@ Files are saved to:
 - **iPhone / iPad:** the app's **Documents** directory, accessible via the iOS *Files* app under "On My iPhone / iPad → Panthera Insight". iCloud backup is intentionally off for these files.
 - **Android:** the device **Downloads** folder.
 
-![Multi-report screen](../assets/user-guide-image/report-screen-multi-report.png){width= "260" }
+![Multi-report screen](../assets/user-guide-image/report-screen-multi-report.png){width="260" }
 
 ??? tip "If some files fail"
     The snackbar reports **"Downloaded *N* of *M* (*K* failed)"** when one or more files could not be saved. Per-file errors also appear as a snackbar (**"Download failed: …"**). The successful files are saved; you can re-select only the failed ones and retry.
