@@ -21,7 +21,7 @@ In plain English, the app collects:
 
 - The **registered email address** you use to sign in, and basic sign-in metadata.
 - Your **name and the client accounts** Panthera has granted you access to.
-- **Crash reports**, automatically scrubbed of emails, tokens and identifiers before they leave your device.
+- **Crash / error reports**, automatically scrubbed of emails, tokens, identifiers and IP address before they leave your device. These are used for reliability only — not analytics.
 
 We do **not** collect: advertising identifiers, your location, your contacts, photos, microphone or camera data. The app contains no third-party advertising or analytics SDKs.
 
@@ -33,8 +33,8 @@ The app talks to a small number of services on Panthera's behalf:
 
 | Service | What it does | Region |
 | ------- | ------------ | ------ |
-| Supabase | Authentication, database, encrypted file storage | London (eu-west-2) |
-| Sentry | Crash reports (PII-scrubbed) | EU (Frankfurt) |
+| Supabase | Hosting, authentication, database, encrypted file storage | United Kingdom — AWS eu-west-2 (London) |
+| Sentry | Crash / error monitoring (PII-scrubbed, not analytics) | EU — Frankfurt, Germany |
 
 The list of sub-processors is also disclosed in section 5 of the [Privacy Notice](https://panthera-sg.github.io/panthera-insight-legal/privacy.html).
 
@@ -47,7 +47,7 @@ You may at any time:
 - Delete your account — see [Settings → Danger Zone](settings.md#danger-zone-delete-account) for the in-app path or the [Delete your account](https://panthera-sg.github.io/panthera-insight-legal/delete-account.html) web page.
 - Lodge a complaint with your local supervisory authority. The Privacy Notice lists the relevant regulators for Singapore, the UK and Canada.
 
-Requests of any of the above should be emailed to [it@pantherafo.com](mailto:it@pantherafo.com).
+Requests of any of the above should be emailed to Panthera's Data Protection Officer at [it@pantherafo.com](mailto:it@pantherafo.com).
 
 ## If you suspect unauthorised access
 
