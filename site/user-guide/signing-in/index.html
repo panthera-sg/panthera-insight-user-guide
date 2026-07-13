@@ -754,24 +754,20 @@
 <li>Enter the 6-digit code.</li>
 <li>Tap <strong>Verify and sign in</strong>. A short "Signing you in… Loading your reports." overlay appears, then the report home loads.</li>
 </ol>
-<div class="admonition example">
-<p class="admonition-title">placeholder</p>
-<p>📷 Replace with a sequence of three screenshots: email-entry screen, code-entry screen, post-sign-in loading overlay.
-Suggested files: <code>assets/user-guide/sign-in-email.png</code>, <code>assets/user-guide/sign-in-otp.png</code>, <code>assets/user-guide/sign-in-success.png</code></p>
-</div>
-<details class="tip">
+<p><img alt="Email-entry screen" src="../../assets/user-guide-image/email-login-screen.png" width="220" /> <img alt="Code-entry screen" src="../../assets/user-guide-image/email-code-screen.png" width="220" /> <img alt="Signing-in loading overlay" src="../../assets/user-guide-image/successful-login-screen.png" width="220" /></p>
+<details open class="tip">
 <summary>If the code does not arrive</summary>
 <p>Check your spam / junk folder first. If it still does not appear after about a minute, tap <strong>Resend code</strong>. A short cooldown (around two minutes) applies between resends — the button shows <strong>Resend in M:SS</strong> while it counts down, with a progress bar underneath. You can also tap <strong>Use a different email</strong> if you typed the wrong address.</p>
 </details>
-<details class="tip">
+<details open class="tip">
 <summary>If the code is rejected</summary>
 <p>Codes expire after a short window and can only be used once. The most common cause is a typo or an old code from a previous email. Request a fresh one with <strong>Resend code</strong>.</p>
 </details>
-<details class="tip">
+<details open class="tip">
 <summary>If you see "Try again in M:SS" under the Verify button</summary>
 <p>After repeated failed verification attempts the app puts a short cooldown (around five minutes) on the Verify button to protect your account. Wait for the countdown to finish; a fresh code may also be requested in the meantime.</p>
 </details>
-<details class="warning">
+<details open class="warning">
 <summary>Too many attempts. You have used your daily sign-in codes…</summary>
 <p>For security, the app limits how many sign-in codes can be requested per day. If you hit the daily limit, a red banner appears and you will need to try again after 12 hours — or contact your relationship manager if you need access sooner.</p>
 </details>
@@ -782,12 +778,8 @@ Suggested files: <code>assets/user-guide/sign-in-email.png</code>, <code>assets/
 <li><strong>Sign in each time</strong>. The session is wiped when you exit the app. The next launch requires a fresh email code.</li>
 </ul>
 <p>Pick whichever fits how you use the app. You can change your mind any time in <strong>Settings → On Exit → Keep me signed in</strong>.</p>
-<div class="admonition example">
-<p class="admonition-title">placeholder</p>
-<p>📷 Replace with a screenshot of the "Stay signed in on this device?" dialog.
-Suggested file: <code>assets/user-guide/caching-prompt.png</code></p>
-</div>
-<details class="tip">
+<p><img alt="Stay signed in on this device? dialog" src="../../assets/user-guide-image/stay-signed-in-dialog.png" width="260" /></p>
+<details open class="tip">
 <summary>If your device has no PIN or biometrics set</summary>
 <p>The prompt is skipped automatically and the app shows: <em>"Sign-in caching is unavailable because this device has no PIN or biometrics set. You will be asked for an email code each launch."</em> Set up a screen lock in your device's system settings to enable the option.</p>
 </details>
@@ -798,16 +790,12 @@ Suggested file: <code>assets/user-guide/caching-prompt.png</code></p>
 <li>Return to it after it has been in the background for a couple of minutes.</li>
 </ul>
 <p>The screen shows a lock icon and <strong>"Confirm it is you to continue. Use your device biometrics or passcode."</strong> Tap <strong>Unlock</strong>, complete the device prompt, and the app opens silently to wherever you left off.</p>
-<div class="admonition example">
-<p class="admonition-title">placeholder</p>
-<p>🎬 Replace with a short gif showing the lock screen and unlock flow on app resume.
-Suggested file: <code>assets/user-guide/biometric-gate.gif</code></p>
-</div>
-<details class="tip">
+<p><img alt="The app's lock screen" src="../../assets/user-guide-image/biometrics-login.png" width="220" /> <img alt="Device passcode prompt" src="../../assets/user-guide-image/device-pin-login.png" width="220" /> <img alt="Device Face ID prompt" src="../../assets/user-guide-image/face-id.png" width="220" /></p>
+<details open class="tip">
 <summary>If the unlock fails</summary>
 <p>After multiple failed unlock attempts the lock screen shows <strong>"Too many failed attempts. Try again in M:SS."</strong> Wait for the countdown to finish and try again. If the device unlock simply does not prompt, see <a href="../troubleshooting/#lock-screen-issues">Troubleshooting</a>.</p>
 </details>
-<details class="tip">
+<details open class="tip">
 <summary>If your session has expired</summary>
 <p>Sessions expire after a long period of inactivity or after a security-sensitive change. When that happens the app returns to the sign-in screen and asks for a fresh email code, even if <strong>Keep me signed in</strong> is on. This is expected.</p>
 </details>

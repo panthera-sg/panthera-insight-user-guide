@@ -789,11 +789,7 @@
 <h1 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h1>
 <p>The <strong>Settings</strong> screen is reached from the gear icon at the top of the report home. It collects everything that you can configure inside the app: account actions, appearance, accessibility, security, legal links, and account deletion.</p>
 <p>This page lists the sections in the order they appear on screen.</p>
-<div class="admonition example">
-<p class="admonition-title">placeholder</p>
-<p>📷 Replace with a screenshot of the Settings screen, scrolled to show the top sections.
-Suggested file: <code>assets/user-guide/settings-top.png</code></p>
-</div>
+<p><img alt="Settings screen" src="../../assets/user-guide-image/settings-screen.png" width="260" /></p>
 <h2 id="update-available-only-when-relevant">Update available <em>(only when relevant)</em><a class="headerlink" href="#update-available-only-when-relevant" title="Permanent link">&para;</a></h2>
 <p>If a newer version of Panthera Insight is in the App Store / Google Play, a gold banner appears at the top: <strong>"Update available: X.Y.Z — Tap to open the store."</strong> Tap it to be taken to the store listing. The banner disappears once you install the update.</p>
 <h2 id="account">Account<a class="headerlink" href="#account" title="Permanent link">&para;</a></h2>
@@ -808,7 +804,7 @@ Suggested file: <code>assets/user-guide/settings-top.png</code></p>
 <li><strong>Sign out everywhere</strong> <em>(outlined, red)</em>. Ends your session on <strong>every</strong> device where you have signed in. Use this if you suspect unauthorised access, if you have lost a device, or if you want a clean slate.</li>
 </ul>
 <p>Each option asks for confirmation before acting.</p>
-<details class="tip">
+<details open class="tip">
 <summary>If a sign-out fails</summary>
 <p>Sign-out almost always succeeds locally — the device's session is wiped even if the server call has trouble. If you see an error, check your internet connection and try again. To be safe, you can also use <strong>Sign out everywhere</strong> the next time you are online.</p>
 </details>
@@ -850,7 +846,7 @@ Suggested file: <code>assets/user-guide/settings-top.png</code></p>
 <li><strong>Off</strong> — the session is wiped when you exit. The next launch requires a fresh email code.</li>
 </ul>
 <p>Tap the small <strong>i</strong> info icon next to the title to see the same explanation as a dialog. The dialog also reminds you that <strong>reports you have downloaded to this device are not affected</strong> by this setting — they remain saved locally either way.</p>
-<details class="tip">
+<details open class="tip">
 <summary>If the switch is greyed out</summary>
 <p>Your device has no PIN / biometrics set, so the app cannot offer cached sign-in. Set up a screen lock in your device's system settings, then come back — the switch becomes available.</p>
 </details>
@@ -864,31 +860,27 @@ Suggested file: <code>assets/user-guide/settings-top.png</code></p>
 <li><strong>Open source licenses</strong> — opens an in-app screen listing the open-source software bundled with Panthera Insight, with each package's licence text.</li>
 </ul>
 <h2 id="danger-zone-delete-account">Danger Zone — Delete account<a class="headerlink" href="#danger-zone-delete-account" title="Permanent link">&para;</a></h2>
-<p>The <strong>Delete account</strong> tile lets you remove your access to the app. The flow is two-step:</p>
+<p>The <strong>Delete account</strong> tile lets you remove your access to the app. The flow asks you to confirm deliberately:</p>
 <ol>
 <li>Tap <strong>Delete account</strong>.</li>
-<li>The first dialog explains what will be removed (your access, your local data) and what Panthera must retain for regulatory reasons (the reports themselves and the records of who they were prepared for). Read it and confirm.</li>
+<li>A dialog explains what will be removed (your access, your local data) and what Panthera must retain for regulatory reasons (the reports themselves and the records of who they were prepared for). To prevent accidental deletion, the <strong>Delete</strong> button stays disabled until you <strong>type <code>DELETE</code></strong> in the box. If you would rather delete from a web browser, the dialog also links the <a href="https://panthera-sg.github.io/panthera-insight-legal/delete-account.html">Delete your account</a> page. Read it and confirm.</li>
 <li>The app calls Panthera's server-side deletion routine while you wait.</li>
 <li>On success, the app signs you out, clears any cached data on the device, and shows the snackbar <strong>"Your account has been deleted."</strong></li>
 </ol>
-<div class="admonition example">
-<p class="admonition-title">placeholder</p>
-<p>📷 Replace with screenshots of the delete-account confirmation dialog and the post-deletion snackbar.
-Suggested files: <code>assets/user-guide/delete-account-confirm.png</code>, <code>assets/user-guide/delete-account-done.png</code></p>
-</div>
+<p><img alt="Delete-account confirmation dialog" src="../../assets/user-guide-image/delete-account-dialog.png" width="220" /> <img alt="Account deleted confirmation" src="../../assets/user-guide-image/delete-account-successful.png" width="220" /></p>
 <div class="admonition danger">
 <p class="admonition-title">Deletion is irreversible</p>
 <p>Once your account is deleted, your email is removed from the access allow-list. You will not be able to sign in again unless Panthera invites you afresh as a new account holder.</p>
 </div>
-<details class="tip">
+<details open class="tip">
 <summary>If deletion fails</summary>
 <p>The snackbar reads <strong>"We could not delete your account just now. Please try again, or contact the data protection officer if this keeps happening."</strong> Check your internet connection and try once more. If it keeps failing, email <a href="mailto:it@pantherafo.com">it@pantherafo.com</a> and the DPO will action the deletion on the server side.</p>
 </details>
-<details class="tip">
+<details open class="tip">
 <summary>What is retained after deletion</summary>
 <p>For regulatory reasons (Panthera is a MAS-licensed entity) the firm must keep certain client records — including portfolio reports prepared for you and the profile information against which they were prepared — for the periods set by applicable law. These records are not generated by you and remain in Panthera's books after your access is deleted. The <a href="https://panthera-sg.github.io/panthera-insight-legal/delete-account.html">Delete your account</a> page describes this in detail.</p>
 </details>
-<details class="tip">
+<details open class="tip">
 <summary>If you no longer have access to the app</summary>
 <p>If the email associated with your account is no longer reachable, you cannot sign in to trigger deletion from the app. The <a href="https://panthera-sg.github.io/panthera-insight-legal/delete-account.html">Delete your account</a> page describes the email-based alternative.</p>
 </details>

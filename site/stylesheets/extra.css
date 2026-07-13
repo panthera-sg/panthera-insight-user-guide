@@ -971,3 +971,23 @@ body,
 .md-typeset .callout.danger {
   border-left-color: #A32D2D;
 }
+
+/* ---- injected for PDF export (print-only) ---- */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer,
+  .md-content__button, .md-source, .md-nav, .md-top { display: none !important; }
+  html, body, .md-container, .md-main, .md-main__inner,
+  .md-content, .md-content__inner, .md-grid {
+    background: #F0E9DC !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .md-main__inner, .md-content, .md-grid { margin: 0 !important; max-width: 100% !important; }
+  .md-content__inner { padding: 14mm 15mm !important; margin: 0 !important; }
+  .md-content__inner:before { display: none !important; }
+  .md-typeset { font-size: .72rem; }
+  .md-typeset img, img { max-width: 60% !important; height: auto !important; }
+  a[href]:after { content: "" !important; }
+  details > summary ~ * { display: revert !important; }  /* reveal collapsed admonitions */
+  @page { size: A4; margin: 0; }
+}
